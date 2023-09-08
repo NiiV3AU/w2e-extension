@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "W2E - YouTube URL Converter",
+    "version": "1.0",
+    "description": "Convert YouTube URLs from /watch?v=xxx to /embed/xxx.",
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://www.youtube.com/watch?v=*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "icons": {
+        "16": "icon-16.png",
+        "48": "icon-48.png",
+        "128": "icon-128.png"
+    }
+}
